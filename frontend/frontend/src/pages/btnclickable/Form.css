@@ -1,0 +1,87 @@
+.form-container{
+
+width:350px;
+margin:80px;
+padding:30px;
+border:1px solid #ddd;
+border-radius:8px;
+text-align:center;
+background:white;
+
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px;
+background:black;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.demo-form label{ 
+   display: block;
+   /* background-color: black; */
+   /* color: white; */
+   /* width: 500px auto; */
+   margin-bottom: 6px;
+   font-weight: 500px;
+   font-size: 15px;
+}
+.demo-form input , .demo-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  /* border: none; */
+  outline: none; 
+  font-size: 15px;    
+}  
+
+.container{
+    background-color: black;
+  color: white;
+  width: 550px;
+  height: 700px;
+  margin: 150px;
+  padding-left:30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px brown;
+  display: grid;
+}
+.btn1 {
+  background-color: brown;
+  color: white;
+  /* height: 100%; */
+  /* width: 100px; */
+  align-items: center;
+  /* margin-left: 50px; */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.btn1:hover {
+  border: 5px solid rgb(189, 239, 189);
+}
+.hh {
+  /* margin-top: 50px; */
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}

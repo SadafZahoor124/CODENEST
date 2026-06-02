@@ -1,0 +1,81 @@
+.submissions-container{
+
+width:80%;
+margin:150px;
+font-family:Arial;
+/* margin: 100px; */
+
+}
+
+.submissions-container h2{
+
+margin-bottom:10px;
+
+}
+
+.description{
+
+color:gray;
+margin-bottom:20px;
+
+}
+
+.submissions-table{
+
+width:100%;
+border-collapse:collapse;
+background:white;
+
+}
+
+.submissions-table th,
+.submissions-table td{
+
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+
+}
+
+.submissions-table th{
+
+background:#f5f5f5;
+
+}
+
+.submissions-table tr:hover{
+
+background:#f9f9f9;
+
+}
+
+.accepted{
+
+color:green;
+font-weight:bold;
+
+}
+
+.wrong{
+
+color:red;
+font-weight:bold;
+
+}
+
+.view-btn{
+
+padding:6px 12px;
+background:black;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:4px;
+
+}
+
+.view-btn:hover{
+
+background:#333;
+
+}
