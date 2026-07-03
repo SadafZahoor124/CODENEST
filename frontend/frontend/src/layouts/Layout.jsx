@@ -9,7 +9,8 @@ import Submission from "../pages/itemclickable/Submission";
 import Problems from '../pages/homepageclickable/Problems';
 import Solutions from '../pages/homepageclickable/Solutions';
 import CodeEditor from '../pages/problemsclickable/CodeEditor';
-
+import SolutionDetails from '../pages/solutionsclickable/SolutionDetails';
+import SubmissionDetails from '../pages/submissionclickable/SubmissionDetails';
 function Layout() {
   return (
     <BrowserRouter>
@@ -22,7 +23,8 @@ function Layout() {
         <Route path="/problems"  element={<Problems/>}/>
         <Route path="/solutions"  element={<Solutions/>}/>
         <Route path="/solve/:tittle"  element={<CodeEditor/>}/>
-
+        <Route path="/solutions/:id"  element={<SolutionDetails/>}/>
+        <Route path="/submission-details" element={<SubmissionDetails />} />
       </Routes>
       <Footer/>
     

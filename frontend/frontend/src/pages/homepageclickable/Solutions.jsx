@@ -5,17 +5,17 @@ function Solutions() {
                 const navigate = useNavigate();
     
     const solutions = [
-        {tittle: "Two Sum" , long: "JavaScript"} ,
-        { tittle: "Binary Search" , long : "Python" }
+        {id:"1", tittle: "Two Sum" , language: "JavaScript"} ,
+        {id:"2",  tittle: "Binary Search" , lnaguage : "Python" }
     ];
   return (
     <div style={{padding:"20px"}}>
-      <h1>Explore Solutions</h1>
-      {solutions.map((s, index) => (
-        <div key={index} style={{border:"1px solid #ccc", margin:"10px" , padding:"10px"}}>
-            <h3>{s.tittle} </h3>
-            <p>Language: {s.long} </p>
-            <button>View Solution</button>
+      <h1>Solutions</h1>
+      {solutions.map((item) => (
+        <div key={item.id} style={{border:"1px solid #ccc", margin:"10px" , padding:"10px"}}>
+            <h3>{item.tittle} </h3>
+            <p>item.language </p>
+            <button onClick={() => navigate(`/solutions/${item.id}`)}>View Solution</button>
         </div>
       )) }
     </div>

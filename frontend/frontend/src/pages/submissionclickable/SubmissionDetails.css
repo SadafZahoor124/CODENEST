@@ -1,0 +1,43 @@
+.submission-details {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.submission-details h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.submission-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.submission-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.code-section {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.code-section h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.code-section pre {
+  color: #00ff88;
+  overflow-x: auto;
+  font-size: 15px;
+  line-height: 1.6;
+}
