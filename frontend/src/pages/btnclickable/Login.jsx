@@ -18,7 +18,7 @@ console.log("Password:",password)
 return(
       // <div style={{display:'flex',justifyContent:'space-between'}}>
             <div className="form-container">
-                  <h2>Login to CodeNest</h2>
+                  <h2 style={{paddingBottom:"10px"}}>Login to CodeNest</h2>
                   <form className="login-form" onSubmit={handleSubmit}>
                         <input className="login-input"
                            type="email"
@@ -36,7 +36,7 @@ return(
                         />
                         <button className="login-btn" type="submit">Login</button>
                   </form>
-                  <p>Don't have an account? <a className="#" style={{cursor:'pointer'}}  onClick={() => navigate("/register")}>Register</a></p>
+                  <p style={{paddingTop:"15px"}}>Don't have an account? <a className="#" style={{cursor:'pointer', color:"brown"}}  onClick={() => navigate("/register")}>Register</a></p>
             </div>
       // </div>
 )

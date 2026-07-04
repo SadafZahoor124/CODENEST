@@ -91,10 +91,10 @@ return(
                     />
                </div>
           </div>
-          <p className='policy'>By clicking below you confirm that you have read and agree to Codenest's <a href='#'>Privacy Policy</a></p>
+          <p className='policy'>By clicking below you confirm that you have read and agree to Codenest's <a href='#' style={{color:"blue", fontWeight:"bold"}}>Privacy Policy</a></p>
           <button type="submit" className="btn1">Register</button>
           </form>
-          <p className="hh">If already have an account? <a className="#" style={{cursor:'pointer'}}  onClick={() => navigate("/login")}>Login</a></p>
+          <p className="hh">If already have an account? <a className="#" style={{cursor:'pointer', color:"blue", fontWeight:"bold"}}  onClick={() => navigate("/login")}>Login</a></p>
      </div>
 
 )
