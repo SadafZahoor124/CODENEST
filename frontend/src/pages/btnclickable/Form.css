@@ -49,13 +49,8 @@ border-radius:5px;
   outline: none; 
   font-size: 15px;    
 }  
-
-/* ===========================
-   Form Container
-=========================== */
-
 .container{
-    width:90%;
+    width:100%;
     max-width:550px;
     margin:100px auto;
     padding:30px;
@@ -64,11 +59,6 @@ border-radius:5px;
     border-radius:10px;
     box-shadow:0 8px 20px brown;
 }
-
-/* ===========================
-   Heading
-=========================== */
-
 .create-code{
     text-align:center;
     margin-bottom:25px;
@@ -76,18 +66,9 @@ border-radius:5px;
     font-weight:bold;
 }
 
-/* ===========================
-   Form
-=========================== */
-
 .demo-form{
     width:100%;
 }
-
-/* ===========================
-   Input Groups
-=========================== */
-
 .input-group{
     width:100%;
     margin-bottom:18px;
@@ -99,7 +80,6 @@ border-radius:5px;
     font-size:15px;
     font-weight:600;
 }
-
 .register-input,
 .login-input{
     width:100%;
@@ -111,35 +91,22 @@ border-radius:5px;
     color:white;
     font-size:15px;
 }
-
 .register-input::placeholder,
 .login-input::placeholder{
     color:#bbb;
 }
-
-/* ===========================
-   Two Column Row
-=========================== */
-
 .name-row{
     display:flex;
     gap:20px;
 }
-
 .name-row .input-group{
     flex:1;
 }
-
-/* ===========================
-   Policy
-=========================== */
-
 .policy{
     margin:20px 0;
     font-size:14px;
     line-height:22px;
 }
-
 .policy-link{
     color:skyblue;
     text-decoration:none;
@@ -149,11 +116,6 @@ border-radius:5px;
 .policy-link:hover{
     text-decoration:underline;
 }
-
-/* ===========================
-   Button
-=========================== */
-
 .btn1{
     width:100%;
     padding:13px;
@@ -169,11 +131,6 @@ border-radius:5px;
 .btn1:hover{
     background:#8B0000;
 }
-
-/* ===========================
-   Bottom Text
-=========================== */
-
 .hh{
     text-align:center;
     margin-top:20px;
@@ -189,26 +146,16 @@ border-radius:5px;
 .login-link:hover{
     text-decoration:underline;
 }
-
-/* ===========================
-   Login Form
-=========================== */
-
 .login-form{
     display:flex;
     flex-direction:column;
     gap:18px;
 }
-
-/* ===========================
-   Tablet
-=========================== */
-
 @media (max-width:992px){
 
 .container{
     width:95%;
-    padding:25px;
+    padding:15px;
 }
 
 .create-code{
@@ -217,68 +164,46 @@ border-radius:5px;
 
 }
 
-/* ===========================
-   Mobile
-=========================== */
-
 @media (max-width:768px){
-
 .container{
     margin:90px auto;
     padding:20px;
 }
-
 .name-row{
     flex-direction:column;
     gap:0;
 }
-
 .create-code{
     font-size:23px;
 }
-
 .btn1{
     font-size:16px;
 }
-
 }
-
-/* ===========================
-   Small Mobile
-=========================== */
-
 @media (max-width:480px){
-
 .container{
     width:95%;
     padding:18px;
 }
-
 .create-code{
     font-size:20px;
 }
-
 .input-group label{
     font-size:14px;
 }
-
 .register-input,
 .login-input{
     padding:10px;
     font-size:14px;
 }
-
 .policy{
     font-size:13px;
 }
-
 .hh{
     font-size:14px;
 }
-
 .btn1{
     padding:11px;
     font-size:15px;
 }
-
 }

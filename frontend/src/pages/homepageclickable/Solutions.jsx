@@ -9,8 +9,8 @@ function Solutions() {
         {id:"2",  tittle: "Binary Search" , lnaguage : "Python" }
     ];
   return (
-    <div style={{padding:"20px"}}>
-      <h1>Solutions</h1>
+    <div style={{padding:"100px"}}>
+      <h1 style={{maxWidth:"90%"}}>Solutions</h1>
       {solutions.map((item) => (
         <div key={item.id} style={{border:"1px solid #ccc", margin:"10px" , padding:"10px"}}>
             <h3>{item.tittle} </h3>

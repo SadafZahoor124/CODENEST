@@ -15,8 +15,6 @@ function CodeEditor() {
 
   return (
     <div className="editor-container">
-
-      {/* LEFT SIDE - Problem */}
       <div className="problem-section">
         <h2>{title}</h2>
         <p>
@@ -31,9 +29,7 @@ function CodeEditor() {
           <li>Array lenght greater than 1 </li>
           <li>Use efficient logic</li>
         </ul>
-     </div>
-
-      {/* RIGHT SIDE - Editor */}
+      </div>
       <div className="editor-section">
         <Editor 
           // height="80hv"

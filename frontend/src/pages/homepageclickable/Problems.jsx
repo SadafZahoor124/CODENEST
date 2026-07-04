@@ -10,7 +10,7 @@ function Problems() {
         {tittle:"Merge Intervals", difficulty:"Hard"}
     ];
   return (
-    <div style={{padding:"20px"}}>
+    <div style={{padding:"20px",margin:"100px"}}>
       <h1>All Problems</h1>
       <input type='text' placeholder='Search problem...' />
       {problems.map((p, index) => (

@@ -1,81 +1,110 @@
 .submissions-container{
-
-width:80%;
-margin:150px;
+width:90%;
+max-width: 1200px;
+margin:150px auto 50px;
 font-family:Arial;
 /* margin: 100px; */
 
 }
-
 .submissions-container h2{
-
 margin-bottom:10px;
-
 }
-
 .description{
-
 color:gray;
 margin-bottom:20px;
-
 }
-
 .submissions-table{
-
 width:100%;
 border-collapse:collapse;
 background:white;
-
 }
-
 .submissions-table th,
 .submissions-table td{
-
 border:1px solid #ddd;
 padding:12px;
 text-align:center;
-
 }
-
 .submissions-table th{
-
 background:#f5f5f5;
-
 }
-
 .submissions-table tr:hover{
-
 background:#f9f9f9;
-
 }
-
 .accepted{
-
 color:green;
 font-weight:bold;
-
 }
-
 .wrong{
-
 color:red;
 font-weight:bold;
-
 }
-
 .view-btn{
-
 padding:6px 12px;
 background:black;
 color:white;
 border:none;
 cursor:pointer;
 border-radius:4px;
-
 }
-
 .view-btn:hover{
-
 background:#333;
-
+}
+@media (max-width:992px){
+.submissions-container{
+    width:95%;
+}
+.submissions-table th,
+.submissions-table td{
+    padding:10px;
+    font-size:14px;
+}
+.view-btn{
+    padding:6px 10px;
+}
+}
+@media (max-width:768px){
+.submissions-container{
+    width:95%;
+    margin:100px auto 30px;
+}
+.submissions-container h2{
+    font-size:24px;
+    text-align:center;
+}
+.description{
+    text-align:center;
+    font-size:14px;
+}
+.submissions-table th,
+.submissions-table td{
+    font-size:13px;
+    padding:8px;
+}
+.view-btn{
+    width:100%;
+    padding:8px;
+}
+}
+@media (max-width:400px){
+.submissions-container{
+    width:95%;
+    margin:50px auto 30px;
+}
+.submissions-container h2{
+    font-size:20px;
+}
+.description{
+    font-size:13px;
+}
+.submissions-table{
+    font-size:12px;
+}
+.submissions-table th,
+.submissions-table td{
+    padding:6px;
+}
+.view-btn{
+    font-size:12px;
+    width: 80%;
+}
 }

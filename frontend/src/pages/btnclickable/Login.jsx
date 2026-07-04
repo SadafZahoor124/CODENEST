@@ -36,7 +36,7 @@ return(
                         />
                         <button className="login-btn" type="submit">Login</button>
                   </form>
-                  <p style={{paddingTop:"15px"}}>Don't have an account? <a className="#" style={{cursor:'pointer', color:"brown"}}  onClick={() => navigate("/register")}>Register</a></p>
+                  <p style={{paddingTop:"15px"}}>Don't have an account?{" "} <span className="login-link"  onClick={() => navigate("/register")}>Register</span></p>
             </div>
       // </div>
 )
