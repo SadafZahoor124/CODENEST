@@ -1,6 +1,6 @@
 .editor-container {
   display: flex;
-  max-height: 80vh;
+  height: 90vh;
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -40,6 +40,7 @@ button {
 }
 .editor-section{
     width:55%;
+    /* max-height: 200px; */
 }
 textarea{
     font-size:13px;
@@ -48,17 +49,17 @@ textarea{
 @media (max-width:768px){
 .editor-container{
     flex-direction:column;
-    min-height:auto;
+    /* max-height:200px; */
     margin: auto;
 }
 .problem-section{
     width:100%;
-    height:auto;
+    /* height:auto; */
     padding:15px;
 }
 .editor-section{
     width:100%;
-    height: auto;
+    height: 200px;
     padding:15px;
 }
 textarea{
