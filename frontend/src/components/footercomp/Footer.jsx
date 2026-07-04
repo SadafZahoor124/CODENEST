@@ -1,13 +1,19 @@
 import React from 'react'
 import "./Footer.css";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+      const navigate = useNavigate();
+
   return (
    <footer className='footer'>
      <div className='footer-container'>
         <div className='footer-col'>
             <h4>Codenest</h4>
-            <p>practice coding problems and improve your programming skills.</p>
+            <p style={{width:"200px"}}>Practice coding problems,
+                 learn optimized solutions,
+                 and prepare for technical interviews.
+            </p>
         </div>
         <div className='footer-col'>
             <h4>Problems</h4>
@@ -21,21 +27,23 @@ function Footer() {
             <h4>Solutions</h4>
             <p>All solutions</p>
             <p>Top solutions</p>
-            <p>Community</p>
+            <p>Resent Solutions</p>
             <p>Best approaches</p>
         </div>
         <div className='footer-col'>
             <h4>Resources</h4>
-            <p>Blog</p>
-            <p>Guides</p>
-            <p>Interview prop</p>
+            <p>Coding Guides</p>
+            <p>Interview tips</p>
             <p>FAQs</p>
+            <p>Help Center</p>
+            <p>Privacy Policy</p>
         </div>
         <div className='footer-col'>
             <h4>Get Started</h4>
-            <p>Login</p>
-            <p>Register</p>
-            <p>Contact</p>
+            <p onClick={() => navigate("/login")}>Login</p>
+            <p onClick={() => navigate("/register")}>Register</p>
+            <p onClick={() => navigate("/about")}>About Us</p>
+            <p onClick={() => navigate("/contact")}>Contact Us</p>
             <p>Support</p>
         </div>
         

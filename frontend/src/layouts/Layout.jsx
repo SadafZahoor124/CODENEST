@@ -11,6 +11,8 @@ import Solutions from '../pages/homepageclickable/Solutions';
 import CodeEditor from '../pages/problemsclickable/CodeEditor';
 import SolutionDetails from '../pages/solutionsclickable/SolutionDetails';
 import SubmissionDetails from '../pages/submissionclickable/SubmissionDetails';
+import About from '../pages/aboutsection/About';
+import Contact from "../pages/contactsection/Contact";
 function Layout() {
   return (
     <BrowserRouter>
@@ -25,6 +27,8 @@ function Layout() {
         <Route path="/solve/:tittle"  element={<CodeEditor/>}/>
         <Route path="/solutions/:id"  element={<SolutionDetails/>}/>
         <Route path="/submission-details" element={<SubmissionDetails />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     

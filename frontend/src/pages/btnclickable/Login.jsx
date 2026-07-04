@@ -16,39 +16,29 @@ console.log("Password:",password)
 }
 
 return(
-
-<div style={{display:'flex',justifyContent:'space-between'}}>
-<div className="form-container">
-
-<h2>Login to CodeNest</h2>
-
-<form onSubmit={handleSubmit}>
-
-<input
-type="email"
-placeholder="Enter Email"
-value={email}
-onChange={(e)=>setEmail(e.target.value)}
-required
-/>
-
-<input
-type="password"
-placeholder="Enter Password"
-value={password}
-onChange={(e)=>setPassword(e.target.value)}
-required
-/>
-
-<button type="submit">Login</button>
-
-</form>
-
-<p>Don't have an account? <a className="#" style={{cursor:'pointer'}}  onClick={() => navigate("/register")}>Register</a></p>
-
-</div>
-
-</div>
+      // <div style={{display:'flex',justifyContent:'space-between'}}>
+            <div className="form-container">
+                  <h2>Login to CodeNest</h2>
+                  <form className="login-form" onSubmit={handleSubmit}>
+                        <input className="login-input"
+                           type="email"
+                           placeholder="Enter Email"
+                           value={email}
+                           onChange={(e)=>setEmail(e.target.value)}
+                           required
+                        />
+                        <input className="login-input"
+                            type="password"
+                            placeholder="Enter Password"
+                            value={password}
+                            onChange={(e)=>setPassword(e.target.value)}
+                            required
+                        />
+                        <button className="login-btn" type="submit">Login</button>
+                  </form>
+                  <p>Don't have an account? <a className="#" style={{cursor:'pointer'}}  onClick={() => navigate("/register")}>Register</a></p>
+            </div>
+      // </div>
 )
 
 }
