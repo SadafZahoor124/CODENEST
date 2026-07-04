@@ -29,7 +29,6 @@ border:none;
 cursor:pointer;
 border-radius:5px;
 }
-
 .demo-form label{ 
    display: block;
    /* background-color: black; */
@@ -51,38 +50,235 @@ border-radius:5px;
   font-size: 15px;    
 }  
 
+/* ===========================
+   Form Container
+=========================== */
+
 .container{
-    background-color: black;
-  color: white;
-  width: 100%;
-  max-width: 550px;
-  height: 600px;
-  margin: 100px 150px;
-  padding-left:30px;
-  border-radius: 10px;
-  box-shadow: 0px 8px 20px brown;
-  display: grid;
+    width:90%;
+    max-width:550px;
+    margin:100px auto;
+    padding:30px;
+    background:black;
+    color:white;
+    border-radius:10px;
+    box-shadow:0 8px 20px brown;
 }
-.btn1 {
-  background-color: brown;
-  color: white;
-  width: 500px;
-  align-items: center;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 10px;
+
+/* ===========================
+   Heading
+=========================== */
+
+.create-code{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:28px;
+    font-weight:bold;
 }
-.btn1:hover {
-  border: 5px solid rgb(189, 239, 189);
+
+/* ===========================
+   Form
+=========================== */
+
+.demo-form{
+    width:100%;
 }
-.hh {
-  text-align: center;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+
+/* ===========================
+   Input Groups
+=========================== */
+
+.input-group{
+    width:100%;
+    margin-bottom:18px;
 }
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.register-input,
+.login-input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+    background:#1e1e1e;
+    color:white;
+    font-size:15px;
+}
+
+.register-input::placeholder,
+.login-input::placeholder{
+    color:#bbb;
+}
+
+/* ===========================
+   Two Column Row
+=========================== */
+
+.name-row{
+    display:flex;
+    gap:20px;
+}
+
+.name-row .input-group{
+    flex:1;
+}
+
+/* ===========================
+   Policy
+=========================== */
+
 .policy{
-  padding-bottom: 30px;
-  padding-top: 15px;
+    margin:20px 0;
+    font-size:14px;
+    line-height:22px;
+}
+
+.policy-link{
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.policy-link:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.btn1{
+    width:100%;
+    padding:13px;
+    background:brown;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn1:hover{
+    background:#8B0000;
+}
+
+/* ===========================
+   Bottom Text
+=========================== */
+
+.hh{
+    text-align:center;
+    margin-top:20px;
+    font-size:15px;
+}
+
+.login-link{
+    color:skyblue;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.login-link:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Login Form
+=========================== */
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:992px){
+
+.container{
+    width:95%;
+    padding:25px;
+}
+
+.create-code{
+    font-size:25px;
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+.container{
+    margin:90px auto;
+    padding:20px;
+}
+
+.name-row{
+    flex-direction:column;
+    gap:0;
+}
+
+.create-code{
+    font-size:23px;
+}
+
+.btn1{
+    font-size:16px;
+}
+
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:480px){
+
+.container{
+    width:95%;
+    padding:18px;
+}
+
+.create-code{
+    font-size:20px;
+}
+
+.input-group label{
+    font-size:14px;
+}
+
+.register-input,
+.login-input{
+    padding:10px;
+    font-size:14px;
+}
+
+.policy{
+    font-size:13px;
+}
+
+.hh{
+    font-size:14px;
+}
+
+.btn1{
+    padding:11px;
+    font-size:15px;
+}
+
 }

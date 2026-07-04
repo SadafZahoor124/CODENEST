@@ -48,9 +48,9 @@ function Footer() {
         </div>
         
      </div>
-     <div className='logo' style={{display: 'flex', justifyContent:'space-between',gap: '10px',marginLeft: '100px', marginTop:'100px'}}>
-         <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE1cQ7ctIwkug/company-logo_200_200/B4EZu3Q2B7I4AI-/0/1768306205192/codenest_ltd_logo?e=2147483647&v=beta&t=-yJX1gfwNyhmEKglMrG8T66yvYT2N0bGO4dCqrutnd4" />
-         <div style={{display: 'flex',justifyContent: 'end',gap: '15px',marginRight: '100px'}}>
+     <div className='log'>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaYPfM2Zg98E69tvXXLepuEt6yX8SIydCPQ&s" />
+         <div className='social-icons'>
              <i className="fa-brands fa-facebook"></i>
              <i className="fa-brands fa-linkedin"></i>
              <i className="fa-brands fa-x-twitter"></i>
